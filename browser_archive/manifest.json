@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Archive.is Link Opener",
+    "version": "1.0",
+    "description": "Opens links through archive.is in a new tab",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "browser_specific_settings": {
+      "edge": {
+        "browser_action_next_to_address_bar": true
+      }
+    }
+  }
